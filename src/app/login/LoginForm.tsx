@@ -11,14 +11,14 @@ export default function LoginForm() {
         <form action={loginAction} className="flex max-w-[300px] flex-col gap-2 bg-gray-800 p-4 rounded-md">
 
             <div className="flex flex-col gap-2">
-                <input id="email" name="email" placeholder="Email" type="email" className="p-2 rounded-md bg-gray-700 text-white" />
+                <input id="email" name="email" placeholder="Email" type="email" className="p-2 rounded-md bg-gray-700 text-white" defaultValue="contact@iamharshil.app" />
             </div>
             {state?.errors?.email && (
                 <p className="text-red-500">{state.errors.email}</p>
             )}
 
             <div className="flex flex-col gap-2">
-                <input id="password" name="password" placeholder="Password" type="password" className="p-2 rounded-md bg-gray-700 text-white" />
+                <input id="password" name="password" placeholder="Password" type="password" className="p-2 rounded-md bg-gray-700 text-white" defaultValue="passwordpassword" />
             </div>
             {state?.errors?.password && (
                 <p className="text-red-500">{state.errors.password}</p>
